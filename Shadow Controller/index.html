@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <label>Offset X</label>
+        <input class="offset-x" type="range" min="-100" max="100" value="2">
+        <label>Offset Y</label>
+        <input class="offset-y" type="range" min="-100" max="100" value="2">
+        <label>Blur Radius</label>
+        <input class="blur-radius" type="range" min="0" max="100" value="2">
+        <label>Blur Spread</label>
+        <input class="blur-spread" type="range" min="0" max="100" value="2">
+        <label>Color</label>
+        <input class="color" type="color" value="#000000">
+        <input class="css-value" type="text" onclick="this.select()" readonly>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
