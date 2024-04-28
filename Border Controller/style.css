@@ -1,0 +1,50 @@
+ #border_wrapper{
+    box-sizing: border-box;
+    width: 700px;
+    height: 700px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+input[type="number"] {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+}
+
+
+#topleft {
+    top: 0;
+    left: 0;
+}
+
+#topright {
+    top: 0;
+    right: 0;
+}
+
+#botleft {
+    bottom: 0;
+    left: 0;
+}
+
+#botright {
+    bottom: 0;
+    right: 0;
+}
+
+#border_radi{
+    box-sizing: border-box;
+    width: 480px;
+    height: 480px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
