@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="appBg">
+        <form name="calculator">
+            <input type="textfield" id="ans" value="" autocomplete="off" readonly>
+            <input type="reset" value="C" onclick="resetCalculator(); allowDecimal = true; decimalEntered = false;" class="orange">
+            
+            <input type="button" value="DEL" onclick="backspace()" class="orange">
+            <br>
+            <input type="button" value="7" onclick="handleNumberClick('7')">
+            <input type="button" value="8" onclick="handleNumberClick('8')">
+            <input type="button" value="9" onclick="handleNumberClick('9')">
+            <input id="mas" type="button" value="+" onclick="handleOperatorClick('+')" class="orange">
+            <br>
+            <input type="button" value="4" onclick="handleNumberClick('4')">
+            <input type="button" value="5" onclick="handleNumberClick('5')">
+            <input type="button" value="6" onclick="handleNumberClick('6')">
+            <input id="menos" type="button" value="-" onclick="handleOperatorClick('-')" class="orange">
+            <br>
+            <input type="button" value="1" onclick="handleNumberClick('1')">
+            <input type="button" value="2" onclick="handleNumberClick('2')">
+            <input type="button" value="3" onclick="handleNumberClick('3')">
+            <input id="por" type="button" value="x" onclick="handleOperatorClick('*')" class="orange">
+            <br>
+            <input type="button" value="0" onclick="handleNumberClick('0')">
+            <input id="punto" type="button" value="." onclick="handleButtonClick('.')">
+            <input id="igual" type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)" class="orange">
+            <input id="division" type="button" value="/" onclick="handleOperatorClick('/')" class="orange">
+            
+            
+    </div>
+
+    <script src="/app.js"></script>
+    
+</body>
+</html>
