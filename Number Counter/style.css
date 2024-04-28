@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.2s linear;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    gap: 1em;
+    margin-top: 1rem; 
+    padding: 1rem;
+}
+
+label {
+    margin-bottom: 1rem;
+    font-size: 10rem;
+}
+
+button {
+    min-width: 10rem;
+    min-height: 5rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding: 0rem 1rem;
+}
+
+#decreaseBtn{
+    background-color: red;
+}
+
+#increaseBtn{
+    background-color: green;
+}
