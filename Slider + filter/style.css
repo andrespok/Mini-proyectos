@@ -1,0 +1,74 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+
+button{
+    width: 10rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    margin: 2rem 1rem;
+    padding: 0.4rem;
+    border-radius: 30px;
+    border-color: red;
+    cursor: pointer;
+}
+
+button.active{
+    background-color: rgb(205, 238, 205);
+}
+
+.telefonos-img {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+
+.telefonos-img img {
+    /* width: 20rem;
+    height: auto;
+    padding: 10px;
+    border: 1px solid black; */
+    width: 30%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+    transition: transform 0.5s;
+
+}
+
+.telefonos-img img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.telefonos-img::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar horizontal */
+    height: 12px; /* Altura del scrollbar vertical */
+}
+
+.telefonos-img::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 6px;
+}
+
+.telefonos-img::-webkit-scrollbar-thumb:hover {
+    background: gray; 
+}
