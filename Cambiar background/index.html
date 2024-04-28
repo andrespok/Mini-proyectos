@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="random"></div>
+    <div class="button-container">
+        <button id="openModalBtn">Change Background</button>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <button class="select" id="1" onclick=background1()> <img src="./Backgrounds/1.jpg" alt="" width="165px" height="100px"> </button>
+            <button class="select" id="2" onclick=background2()> <img src="./Backgrounds/2.jpg" alt="" width="165px" height="100px"> </button>
+            <button class="select" id="3" onclick=background3()> <img src="./Backgrounds/3.jpg" alt="" width="165px" height="100px"> </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
