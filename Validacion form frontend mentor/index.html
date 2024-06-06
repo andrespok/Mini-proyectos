@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="learncode">
+        <h1>Learn to code by watching others</h1>
+        <h3>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</h3>
+    </div>
+    <div class="container2">
+      <div id="trial">
+          <b>Try it free 7 days</b> then $20/mo. thereafter
+      </div>
+      <form id="formulario" class="formulario">
+        <div class="formularioGrupo" id="grupoNombre">
+          <input type="text" id="nombre" name="nombre" placeholder="First Name">
+          <p class="anuncioError">Only letters, 4 to 16</p>
+        </div>
+        <div class="formularioGrupo" id="grupoApellido">
+          <input type="text" id="apellido" name="apellido" placeholder="Last Name">
+          <p class="anuncioError">Only letters, 4 to 16</p>
+        </div>
+        <div class="formularioGrupo" id="grupoEmail">
+          <input type="text" id="email" name="email" placeholder="example@example.com">
+          <p class="anuncioError">Email is incorrect</p>
+        </div>
+        <div class="formularioGrupo" id="grupoPassword">
+          <input type="password" id="password" name="password" placeholder="Password">
+          <p class="anuncioError">Password cannot be empty</p>
+        </div>
+        <button type="submit" id="claim">CLAIM YOUR FREE TRIAL</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
