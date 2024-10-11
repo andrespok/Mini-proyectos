@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="left-side">
+
+      <div class="tarjeta-contenedor" id="tarjeta-contenedor">
+
+        <div class="tarjeta-delantera">
+          <div class="conteima">
+            <img src="images/chip-tarjeta.png" alt="chip tarjeta" class="chip" id="chip">
+            <img src="/images/visa.png" alt="Logo Visa" class="logo-tarjeta" id="logo-tarjeta">
+            <p class="numero">#### #### #### ####</p>
+            <p class="nombre">John Doe</p>
+            <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+          </div>
+          <img src="images/bg-card-front.png" alt="Front Card">
+        </div>
+
+        <div class="tarjeta-trasera">
+          <img src="images/bg-card-back.png" alt="Back Card">
+          <p class="CCV">123</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="right-side">
+
+      <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+        
+        <div class="containform">
+          <div class="grupo">
+            <label for="inputNumero">Numero Tarjeta</label>
+            <input type="text" id="inputNumero" maxlength="20" autocomplete="off">
+          </div>
+
+          <div class="grupo">
+            <label for="inputNombre">Nombre</label>
+            <input type="text" id="inputNombre">
+          </div>
+
+          <div class="grupo-expira">
+            <div class="container-mes">
+              <label for="mes">Exp. Mes</label>
+              <input type="text" id="mes" class="mes" placeholder="MM">
+            </div>
+            <div class="container-year">
+              <label for="year">Exp. Año</label>
+              <input type="text" id="year" class="year" placeholder="YY">
+            </div>
+            <div class="container-ccv">
+              <label for="ccv">CCV</label>
+              <input type="text" id="ccv" class="ccv" placeholder="CCV">
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

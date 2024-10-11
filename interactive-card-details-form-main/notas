@@ -1,0 +1,29 @@
+  <div class="container">
+
+    <div class="tarjeta-contenedor" id="tarjeta-contenedor">
+
+      <div class="tarjeta-delantera">
+
+      </div>
+      <div class="tarjeta-trasera">
+
+      </div>
+
+    </div>
+
+
+    <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+      <div class="grupo">
+        <label for="inputNumero">Numero Tarjeta</label>
+        <input type="text" id="inputNumero" maxlength="20" autocomplete="off">
+      </div>
+      <div class="grupo">
+        <label for="inputNombre">Nombre</label>
+      </div>
+
+    </form>
+
+  </div>
+
+
+  
