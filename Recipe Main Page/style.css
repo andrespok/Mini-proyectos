@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Young Serif", serif;
+  background-color: #F4E3D3;
+}
+
+main{
+    background-color: white;
+}
+
+.container {
+  display: flex;
+  max-width: 1440px;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  width: 650px;
+}
+
+p,
+li {
+  line-height: 1.8em;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  width: 580px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  align-self: center;
+  margin-top: 3rem;
+}
+
+.h1p,
+.ingredients li,
+.instructions,
+.nutrition {
+  margin: 0 2rem 0 2rem;
+}
+
+.instructions{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.preparation{
+    border: 1px solid  #FDF4F8;
+    border-radius: 20px;
+    background-color:  #FDF4F8;
+    margin: 0 2rem 0 2rem;
+    padding: 0 2rem;
+}
+
+.preparation h3{
+    color: #6E2A47;
+}
+
+li::marker{
+    color: #704331;
+    font-weight: bold;
+}
+
+.ingredients h2, 
+.instructions h2, 
+.nutrition h2{
+    color: #704331;
+}
+
+.nutrition td{
+    text-indent: 4rem;
+    padding: 0.8rem 0 1rem 0;
+}
+
+.nutrition .value{
+    display: flex;
+    margin-left: 10rem;
+}
+
+.nutrition tr {
+    border-bottom: 1px solid black;
+}
+
+/* Falta el border bottom de ese tr, y un poco de margen al el ol li  */
