@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1440px;
+    width: 20rem;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+img{
+    border-radius: 50%;
+    width: 6rem;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    padding: 0.9rem;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    width: 20rem;
+    margin: 0.4rem;
+}
+
+.UK{
+    margin-top: -0.5rem;
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+}
+
+h1{
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+p{
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+}
+
+button:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    cursor:
+}
