@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Colors */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral Colors */
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  min-height: 100dvh;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-dark-blue-main-bg);
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  border-radius: 10px;
+  gap: 1.5rem;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 1);
+  background-color: var(--very-dark-blue-card-bg);
+}
+
+.nft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft img {
+  width: min(90%, 330px);
+  border-radius: 10px;
+  margin-top: 1.2rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.info h3 {
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.info h3:hover{
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+.info p {
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: normal;
+  letter-spacing: 0.02em;
+  color: var(--soft-blue);
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding-left: 6%;
+  gap: 1rem;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--very-dark-blue-line);
+  width: 88%;
+  margin-left: 6%;
+}
+
+.avatar img {
+  width: 35px;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.eth {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--cyan);
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--soft-blue);
+}
+
+.avatar p {
+  color: var(--soft-blue);
+}
+
+.avatar p span {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.avatar p span:hover{
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+.eye {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: min(90%, 330px);
+  background-color: hsl(178, 100%, 50%, 60%);
+  height: 330px;
+  border-radius: 10px;
+  margin-top: 1.2rem;
+  opacity: 0;
+}
+
+.eye img {
+  width: 50px;
+  height: auto;
+  
+}
+
+.eye:hover{
+    opacity: 1;
+    cursor: pointer;
+}
